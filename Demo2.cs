@@ -1,3 +1,5 @@
+using System.Linq.Expressions;
+
 class Demo2
 {
     public static void Main(String[] args)
@@ -23,15 +25,15 @@ class Demo2
 
         System.Console.WriteLine($"Alrik är: {age} år"); //string interpolering
 
-        string text1 =    "  han sa \"hello\"! C:\\Users\\Alrik\\Desktop\\bingo.png  \n asda\tsd sa "; //altGr  +  +
-        string text2 =  """  han sa "hello"! C:\Users\Alrik\Desktop\bingo.png    asdasdasd """; //altGr  +  +
-        string text3 =  
+        string text1 = "  han sa \"hello\"! C:\\Users\\Alrik\\Desktop\\bingo.png  \n asda\tsd sa "; //altGr  +  +
+        string text2 = """  han sa "hello"! C:\Users\Alrik\Desktop\bingo.png    asdasdasd """; //altGr  +  +
+        string text3 =
 @"
    __O__
      |
      |
     /\
-   /  \ "; 
+   /  \ ";
 
         System.Console.WriteLine(text1);
         System.Console.WriteLine(text2);
@@ -40,7 +42,7 @@ class Demo2
         //konvertera datatyp 
         int nummer;
         double decimalTal = 2.5;
-        nummer =  (int) decimalTal;
+        nummer = (int)decimalTal;
 
 
         System.Console.WriteLine(nummer);
@@ -52,14 +54,14 @@ class Demo2
         namn = "Felix";
 
         //int  ->  string
-        namn = "" + tal ;
-        namn = tal.ToString() ; // inbyggd metod som finns i allt nästan
+        namn = "" + tal;
+        namn = tal.ToString(); // inbyggd metod som finns i allt nästan
         System.Console.WriteLine(namn);
 
         //boolean -> string
 
         bool cool = true; // false/true endast
-        System.Console.WriteLine("Is Alrik cool ?  "+cool);
+        System.Console.WriteLine("Is Alrik cool ?  " + cool);
 
         String text5 = "hejsan";
         text5 = cool.ToString();
@@ -67,12 +69,20 @@ class Demo2
 
 
         //  string -> int
-        string randomText= " 8   ";
+        string randomText = " 8   ";
         int on;
         on = int.Parse(randomText);  //* lite 
         System.Console.WriteLine(on);
+        /* 
 
+        Block kommentar
 
-        
+        cdfdsfsdfdsfa
+        dsffsdfasfdfds
+        asdfasfd
+        asdfrfasdf
+
+         */
+
     }
 }
